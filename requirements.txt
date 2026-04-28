@@ -1,0 +1,8 @@
+streamlit>=1.40
+altair>=5.0
+numpy>=1.26
+pandas>=2.2
+requests>=2.32
+torch>=2.2
+lightning>=2.4
+pytorch-forecasting==1.7.0
