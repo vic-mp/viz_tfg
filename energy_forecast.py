@@ -23,6 +23,9 @@ from forecast_config import (
     WEATHER_VARIABLES,
 )
 ASSETS_DIR = Path(__file__).resolve().parent / "nhits_solar"
+if not ASSETS_DIR.exists():
+    ASSETS_DIR = ROOT.parent / "nhits_solar"
+
 UTC = ZoneInfo("UTC")
 MADRID = ZoneInfo("Europe/Madrid")
 ENCODER_LENGTH = HISTORY_HOURS = 72
